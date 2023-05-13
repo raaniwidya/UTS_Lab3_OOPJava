@@ -12,11 +12,28 @@ public class BilanganBulat {
 
     // CONTOH SETTER METHOD
     public void setAngka(int angka) {
-        this.angka = angka;
+        if(angka < 0) {
+            System.out.println("Angka tidak boleh negatif");
+            System.exit(0);
+        } else if(angka > 100) {
+            System.out.println("Angka tidak lebih dari 100");
+            System.exit(0);
+        } else {
+            this.angka = angka;
+        }
     }
+
     // CONTOH OVERLOADING METHOD ANTARA METHOD SETANGKA
     public void setAngka(double angka) {
-        this.angka = (int) angka;
+        if(angka < 0) {
+            System.out.println("Angka tidak boleh negatif");
+            System.exit(0);
+        } else if(angka > 100) {
+            System.out.println("Angka tidak lebih dari 100");
+            System.exit(0);
+        } else {
+            this.angka = (int) angka;
+        }
     }
 
     // CONTOH GETTER METHOD
