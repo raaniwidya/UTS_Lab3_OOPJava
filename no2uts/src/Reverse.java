@@ -4,6 +4,10 @@ public class Reverse {
 
     // Constructor
     public Reverse(String kata) {
+        if (kata == null || kata.trim().isEmpty()) {
+            System.err.println("Error! Kata tidak boleh kosong");
+            System.exit(0);
+        }
         this.kata = kata;
     }
 
