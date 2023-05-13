@@ -6,6 +6,10 @@ public class Fisika {
         this.m = m;
         this.a = a;
         this.v = v;
+        if (r == 0) {
+            System.err.println("Nilai r tidak boleh 0");
+            System.exit(0);
+        }
         this.r = r;
     }
 
